@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Chan ideals</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="css/bootstrap-responsive.min.css" rel="stylesheet" media="screen">
+	<link href="css/custom-theme/jquery-ui-1.10.3.custom.css" rel="stylesheet" media="screen">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+    <style type="text/css">  
+	   
+	    
+	    
+	    body{
+	    	width:1080;
+	    	height:1920;
+	    	margin: 60px auto;
+	    	background: #ffa84c; /* Old browsers */
+			background: -moz-linear-gradient(top,  #ffa84c 0%, #ff7b0d 100%); /* FF3.6+ */
+			background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffa84c), color-stop(100%,#ff7b0d)); /* Chrome,Safari4+ */
+			background: -webkit-linear-gradient(top,  #ffa84c 0%,#ff7b0d 100%); /* Chrome10+,Safari5.1+ */
+			background: -o-linear-gradient(top,  #ffa84c 0%,#ff7b0d 100%); /* Opera 11.10+ */
+			background: -ms-linear-gradient(top,  #ffa84c 0%,#ff7b0d 100%); /* IE10+ */
+			background: linear-gradient(to bottom,  #ffa84c 0%,#ff7b0d 100%); /* W3C */
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffa84c', endColorstr='#ff7b0d',GradientType=0 ); /* IE6-9 */
+				    	
+	    }
+	    #header{
+	    	padding-left:60px;
+	    	background: #feccb1; /* Old browsers */
+			background: -moz-linear-gradient(top,  #feccb1 0%, #f17432 50%, #ea5507 51%, #fb955e 100%); /* FF3.6+ */
+			background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#feccb1), color-stop(50%,#f17432), color-stop(51%,#ea5507), color-stop(100%,#fb955e)); /* Chrome,Safari4+ */
+			background: -webkit-linear-gradient(top,  #feccb1 0%,#f17432 50%,#ea5507 51%,#fb955e 100%); /* Chrome10+,Safari5.1+ */
+			background: -o-linear-gradient(top,  #feccb1 0%,#f17432 50%,#ea5507 51%,#fb955e 100%); /* Opera 11.10+ */
+			background: -ms-linear-gradient(top,  #feccb1 0%,#f17432 50%,#ea5507 51%,#fb955e 100%); /* IE10+ */
+			background: linear-gradient(to bottom,  #feccb1 0%,#f17432 50%,#ea5507 51%,#fb955e 100%); /* W3C */
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#feccb1', endColorstr='#fb955e',GradientType=0 ); /* IE6-9 */
+				    	
+	    }
+	    .menu{
+	    	width:200px;
+	    	height:200px;
+	    	/*background: -webkit-linear-gradient(top, #f3c5bd 0%,#e86c57 50%,#ea2803 51%,#ff6600 75%,#c72200 100%); */    	
+	    }
+	   	#lang{	   		
+	   		position:relative;
+	   	}
+	   	.lang{			   		
+		   	position:absolute;
+		    left:760px;
+		    top:500px;	  
+		    	   	}
+		    	   	
+	    .lang #lang1{
+	    	
+	    	z-index:400;
+	    }
+	     .lang #lang2{
+	    	
+	    	z-index:500;
+	    }
+	     .lang #lang3{
+	     	
+	    	z-index:600;
+	    }
+	    .lang #enter{	
+	    	margin-top:100px;    	
+	    	z-index: 700;	    	
+	    	
+	    }	    
+	    .lang #window{	    	
+	    	width:1200px;
+	    	height:500px;
+	    	z-index: 100;		    	  	
+	    	background-color:red;
+	    }
+	}
+    </style>
+  </head>
+  <body>    
+  	<div class="container">
+  		<div class="row" id="header">
+  			
+  			<div class="span4">
+	  			<div class="span2">
+	  				<h1>Sampath Bank</h1>
+	  			</div>
+  			</div>
+  			<div class="span4">
+		  				<span class="menu">File</span>
+		  			</div>
+		  			<div class="span4">
+		  				<span class="menu">Edit</span>
+		  			</div>
+		  			<div class="span4">
+		  				<span class="menu">Help</span>
+		  			</div>	  			
+  		</div>
+  		<div class="row">
+	  		
+	  	<div class="container" id="lang">
+	  			<div class="lang" id="window"></div>
+		  		<div class="lang" id="lang1"><img src="img/lang.gif" alt="sinhala"></div>
+		  		<div class="lang" id="lang2"><img src="img/lang.gif" alt="Tamil"></div>
+		  		<div class="lang" id="lang3"><img src="img/lang.gif" alt="English"></div>
+		  		<div class="lang" id="enter">						
+						<img src="img/punkalasa-Press.gif" alt="press">
+				</div>
+	  		</div>
+		
+		</div>
+  	</div>    
+  	
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery-2.0.3.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+     <script src="js/jquery.easing.compatibility.js"></script>
+     
+    <script type="text/javascript">    
+    	  	
+    $(function(){
+    	/*var left=$(this).offset().left;
+    	var right=$(this).offset().left+$(this).width();
+    	var top=$(this).offset().top;
+    	var bottom=$(this).offset().top+$(this).height();*/  
+    	//$("#enter").css("left",$("#window").width()-$("#enter").width());
+    	var myleft = $("#enter").offset().left;
+    	var width=$("#enter").width()/2;
+        var forward=false;
+        $("#lang1").css("visibility",'hidden');
+        $("#lang2").css("visibility",'hidden');
+        $("#lang3").css("visibility",'hidden');
+        
+        
+        /*          enter the page     */
+        $("#enter").click(function(){       	  	
+        	
+        	if(forward)
+        		{
+				moveLeft();
+        		}
+        	else
+        		{
+        		moveRight();
+        		}
+        		
+        });
+        
+        function moveLeft(){
+        	$("#enterTxt").fadeIn(1000);
+        	
+        	forward=false;  
+        	
+        	$("#enter").animate({
+    			"left":"730px",
+    			"z-index":"700"
+    		},1000);
+        	$("#lang1").animate({
+    			"top":"+=500"        		
+    		},1000); 
+    		$("#lang3").animate({
+    			"top":"-=500"        		
+    		},1000); 
+    		
+        }
+        
+        function moveRight(){ 
+        	$("#lang1").css("visibility",'visible');
+            $("#lang2").css("visibility",'visible');
+            $("#lang3").css("visibility",'visible');
+    			forward=true;    			
+    		$("#enter").hide();    		
+    		jQuery.easing.def = 'easeOutElastic';   
+    		$("#lang1").animate({
+    			"top":"-=500"    			
+    		},1000); 
+    		$("#lang3").animate({
+    			"top":"+=500"    			
+    		},1000); 
+    		$("#lang1").bind("click",function(){
+    			console.log("clicked;")
+    			var menu = document.createElement('div');
+    			
+    			for(var i=0;i<top;i++){
+    				menu.position
+    				$("#lang").append(menu);
+    			}
+    		});
+        }
+            
+    });
+    </script>
+  </body>
+</html>
